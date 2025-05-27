@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7 Brothers AB</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #1a1a1a;
+      color: white;
+    }
+    header {
+      background: repeating-linear-gradient(90deg, #d30000, #d30000 40px, #333 40px, #333 80px);
+      text-align: center;
+      padding: 2rem;
+    }
+    header img {
+      width: 200px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 0.5rem;
+    }
+    .services {
+      background-color: #2a2a2a;
+      padding: 2rem;
+    }
+    .services h2 {
+      color: #ffcc00;
+    }
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+    .services li {
+      margin: 0.5rem 0;
+    }
+    .contact {
+      background-color: #111;
+      padding: 2rem;
+      text-align: center;
+    }
+    .contact p {
+      margin: 0.5rem 0;
+    }
+    footer {
+      background-color: #000;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    .fleet {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 2rem;
+    }
+    .fleet img {
+      max-width: 300px;
+      border: 4px solid #ff0000;
+      border-radius: 10px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      max-width: 400px;
+      margin: 1rem auto;
+      background-color: #222;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    input, textarea {
+      padding: 0.5rem;
+      border: none;
+      border-radius: 5px;
+    }
+    input[type="submit"] {
+      background-color: #ff0000;
+      color: white;
+      cursor: pointer;
+    }
+    .socials {
+      margin-top: 1rem;
+    }
+    .socials a {
+      margin: 0 10px;
+      color: #ffcc00;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logga_7Brothers.png" alt="7 Brothers AB logo">
+    <h1>7 Brothers AB</h1>
+    <p>Allt-i-ett: Biluthyrning, Reparation, Däck & Bilförsäljning</p>
+  </header>
+  <section class="services">
+    <h2>Våra Tjänster</h2>
+    <ul>
+      <li>Service & reparation på alla bilmärken</li>
+      <li>Hjulinställning & Däckbyte</li>
+      <li>AC-påfyllning</li>
+      <li>Däck- & fälgförsäljning, Däckhotell</li>
+      <li>Bilförsäljning & förmedling</li>
+      <li>Biluthyrning (07:00–18:00, jour vid behov)</li>
+    </ul>
+  </section>
+  <section class="fleet">
+    <img src="Mina minibussar uppdaterad bild.png" alt="Minibussar">
+    <img src="7 Brothers AB.png" alt="Reklamskylt">
+    <img src="pussel 7 Brothers AB.png" alt="Pusselgrafik">
+  </section>
+  <section class="contact">
+    <h2>Kontakta oss</h2>
+    <p>📞 0490-125 62</p>
+    <p>📱 070-646 36 86 • 073-053 89 91 • Biluthyrning: 070-200 31 19</p>
+    <p>✉️ 7.brothers@telia.com</p>
+
+    <form action="mailto:7.brothers@telia.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Ditt namn" required>
+      <input type="email" name="email" placeholder="Din e-post" required>
+      <textarea name="message" rows="4" placeholder="Ditt meddelande"></textarea>
+      <input type="submit" value="Skicka">
+    </form>
+
+    <div class="socials">
+      <a href="https://www.facebook.com/7brothersab" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/7brothersab" target="_blank">Instagram</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </section>
+  <footer>
+    © 7 Brothers AB | Designad med ❤️ av Leo & ChatGPT
+  </footer>
+</body>
+</html>
