@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>7 Brothers AB</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       background-color: #121212;
       color: white;
@@ -22,7 +23,7 @@
       border-radius: 10px;
     }
     h1 {
-      font-size: 2.8rem;
+      font-size: 3.2rem;
       margin-top: 1rem;
     }
     p.tagline {
@@ -35,7 +36,7 @@
     .services h2, .contact h2 {
       color: #ffcc00;
       text-align: center;
-      font-size: 2rem;
+      font-size: 2.4rem;
     }
     .services ul {
       list-style: none;
@@ -46,9 +47,10 @@
     .services li {
       margin: 1rem 0;
       padding: 0.5rem 1rem;
-      background: #1f1f1f;
-      border-left: 5px solid #ff0000;
+      background: linear-gradient(135deg, #2a2a2a, #1c1c1c);
+      border-left: 6px solid #ff4500;
       border-radius: 5px;
+      animation: fadeInUp 1s ease-out;
     }
     .fleet {
       background-color: #1c1c1c;
@@ -61,6 +63,7 @@
       max-width: 300px;
       border: 3px solid #ff0000;
       border-radius: 12px;
+      animation: fadeInUp 1s ease-out;
     }
     .contact p {
       margin: 0.5rem 0;
@@ -107,7 +110,15 @@
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
-      color: #888;
+      color: #ccc;
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    h1, h2, p.tagline {
+      animation: fadeInUp 1s ease-out;
     }
   </style>
 </head>
@@ -115,10 +126,11 @@
   <header>
     <img src="logga_7Brothers.png" alt="7 Brothers AB logo">
     <h1>7 Brothers AB</h1>
+    <a href="#services" onmouseover="this.style.backgroundColor='#ffaa00'" onmouseout="this.style.backgroundColor='#ffcc00'" style="display:inline-block; margin-top: 1.5rem; padding: 0.75rem 1.5rem; background-color:#ffcc00; color:#1a1a1a; font-weight:600; text-decoration:none; border-radius:8px; transition: all 0.3s ease;">Utforska våra tjänster</a>
     <p class="tagline">Allt-i-ett: Biluthyrning, Reparation, Däck & Bilförsäljning</p>
   </header>
 
-  <section class="services">
+  <section id="services" class="services">
     <h2>Våra Tjänster</h2>
     <ul>
       <li>Service & reparation på alla bilmärken</li>
