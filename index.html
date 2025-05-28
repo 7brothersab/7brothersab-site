@@ -6,87 +6,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>7 Brothers AB</title>
   <style>
-    body { font-family: Arial, sans-serif; background: #121212; color: #fff; margin: 0; }
-    header { background: #b60000; padding: 2rem; text-align: center; }
-    nav a { color: white; margin: 0 1rem; text-decoration: none; font-weight: bold; }
-    section { padding: 2rem; max-width: 900px; margin: auto; }
+    body { font-family: Arial, sans-serif; margin: 0; background: #121212; color: #fff; }
+    header { background: #b60000; padding: 2rem; text-align: center; color: #fff; }
+    nav a { margin: 0 15px; color: #ffcc00; text-decoration: none; font-weight: bold; }
+    section { padding: 2rem; max-width: 1000px; margin: auto; }
     h2 { color: #ffcc00; }
+    .grid { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+    .grid img { max-width: 300px; width: 100%; border-radius: 10px; border: 2px solid #ff0000; }
+    form { background: #1e1e1e; padding: 1rem; border-radius: 10px; margin: 1rem 0; }
     form input, form textarea, form select {
-      display: block; width: 100%; margin: 1rem 0; padding: 0.7rem; border-radius: 5px; border: none;
+      width: 100%; margin-bottom: 1rem; padding: 0.7rem; border: none; border-radius: 5px;
     }
     form input[type="submit"] {
-      background-color: #d00000; color: white; cursor: pointer; font-weight: bold;
+      background: #d00000; color: white; cursor: pointer; font-weight: bold;
     }
-    .gallery img {
-      width: 100%; max-width: 400px; margin: 10px; border-radius: 10px; border: 3px solid #ff0000;
+    .btn-blocket {
+      display: inline-block; background: #d00000; color: white; padding: 1rem 2rem;
+      text-decoration: none; border-radius: 10px; font-weight: bold; margin: 2rem auto; display: block;
+      text-align: center;
     }
-    .center { text-align: center; }
-    footer { background: #000; color: #ccc; text-align: center; padding: 2rem; margin-top: 3rem; }
-    .blocket-button {
-      background-color: #d00000; padding: 1rem 2rem; color: white; border-radius: 10px;
-      text-decoration: none; font-weight: bold; display: inline-block; margin-top: 2rem;
-    }
+    footer { background: #000; color: #ccc; text-align: center; padding: 1rem; margin-top: 2rem; }
   </style>
 </head>
 <body>
+
   <header>
     <h1>7 Brothers AB</h1>
+    <p>Allt inom bil – från verkstad till uthyrning</p>
     <nav>
-      <a href="#services">Tjänster</a>
-      <a href="#booking">Boka</a>
-      <a href="#gallery">Galleri</a>
-      <a href="#contact">Kontakt</a>
+      <a href="#service">Service</a>
+      <a href="#hyrbil">Hyrbil</a>
+      <a href="#bilder">Bilder</a>
+      <a href="#kontakt">Kontakt</a>
     </nav>
   </header>
 
-  <section id="services">
-    <h2>Våra tjänster</h2>
-    <ul>
-      <li>Service & Reparationer på alla bilmärken</li>
-      <li>Hjulinställning & Däckbyte</li>
-      <li>AC-påfyllning</li>
-      <li>Däck- & fälgförsäljning</li>
-      <li>Däckhotell</li>
-      <li>Bilförsäljning, förmedling & byten</li>
-      <li>Biluthyrning: 9-sitsiga minibussar och personbilar</li>
-    </ul>
-  </section>
-
-  <section id="booking">
-    <h2>Boka service eller hyrbil</h2>
+  <section id="service">
+    <h2>Boka Service / Reparation</h2>
     <form>
       <input type="text" placeholder="Namn" required />
       <input type="tel" placeholder="Telefonnummer" required />
-      <input type="text" placeholder="Bilmodell eller önskad minibuss" required />
       <select>
-        <option value="">Välj typ av bokning</option>
-        <option>Standard service</option>
-        <option>Quick Fix (snabbare, kostar mer)</option>
-        <option>Hyra 9-sitsig minibuss</option>
+        <option>Välj typ</option>
+        <option>Vanlig service/reparation</option>
+        <option>Quick fix (kostar mer – snabbare hantering)</option>
       </select>
-      <textarea placeholder="Övrig information..."></textarea>
+      <textarea placeholder="Beskriv problemet eller vad du vill ha gjort..."></textarea>
       <input type="submit" value="Skicka bokningsförfrågan" />
     </form>
   </section>
 
-  <section id="gallery" class="center">
-    <h2>Galleri</h2>
-    <img src="Mina minibussar uppdaterad bild.png" alt="Minibussar" class="gallery"/>
-    <img src="7 Brothers AB.png" alt="Reklamskylt" class="gallery"/>
-    <img src="pussel 7 Brothers AB.png" alt="Tjänstepussel" class="gallery"/>
-    <img src="Uppdaterad bild av utsidan på firman.png" alt="Fasaden" class="gallery"/>
-    <img src="Mercedesbild uppdaterad.png" alt="Mercedes" class="gallery"/>
-    <img src="Alla bilmärken.jpg" alt="Alla bilmärken" class="gallery"/>
-    <img src="7 Brothers AB, Högsta kreditvärdighet.jpeg" alt="Kreditvärdighet" class="gallery"/>
+  <section id="hyrbil">
+    <h2>Boka 9-sitsig Minibuss</h2>
+    <form>
+      <input type="text" placeholder="Namn" required />
+      <input type="tel" placeholder="Telefonnummer" required />
+      <input type="date" placeholder="Startdatum" required />
+      <input type="date" placeholder="Slutdatum" required />
+      <textarea placeholder="Övrig information..."></textarea>
+      <input type="submit" value="Boka minibuss" />
+    </form>
   </section>
 
-  <div class="center">
-    <a class="blocket-button" href="https://www.blocket.se/butik/7brothers" target="_blank">
-      Se våra bilar på Blocket
-    </a>
-  </div>
+  <section id="bilder">
+    <h2>Galleri</h2>
+    <div class="grid">
+      <img src="Mina minibussar uppdaterad bild.png" alt="Minibussar">
+      <img src="7 Brothers AB.png" alt="Skylt">
+      <img src="pussel 7 Brothers AB.png" alt="Pussel">
+      <img src="Uppdaterad bild av utsidan på firman.png" alt="Utsidan">
+      <img src="Mercedesbild uppdaterad.png" alt="Mercedes">
+      <img src="Alla bilmärken.jpg" alt="Alla bilmärken">
+      <img src="7 Brothers AB, Högsta kreditvärdighet.jpeg" alt="Kredit">
+    </div>
+  </section>
 
-  <section id="contact">
+  <a class="btn-blocket" href="https://www.blocket.se/butik/7brothers" target="_blank">Se våra bilar på Blocket</a>
+
+  <section id="kontakt">
     <h2>Kontakt & Hitta hit</h2>
     <p>📍 Traktorvägen 9, Västervik</p>
     <p>📧 E-post: 7.brothersab@telia.com</p>
