@@ -22,12 +22,16 @@ h1 {
   margin-top: 10px;
 }
 
+main {
+  padding: 20px;
+}
+
 .button-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 12px;
-  padding: 20px;
+  margin-bottom: 30px;
 }
 
 .button-container button {
@@ -40,7 +44,7 @@ h1 {
   cursor: pointer;
   min-width: 160px;
   max-width: 220px;
-  transition: transform 0.2s;
+  transition: transform 0.2s, background-color 0.2s;
 }
 
 .button-container button:hover {
@@ -49,7 +53,6 @@ h1 {
 }
 
 .image-section {
-  padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -63,6 +66,7 @@ h1 {
   border-radius: 10px;
 }
 
+/* Mobilanpassning */
 @media (max-width: 480px) {
   .button-container {
     flex-direction: column;
