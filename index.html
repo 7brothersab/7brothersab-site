@@ -1,136 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="sv">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>7 Brothers AB</title>
-  <style>
-    body {
-      background-color: #0d0d0d;
-      color: white;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-    }
-    header {
-      background-color: #1a1a1a;
-      padding: 1.5rem;
-      text-align: center;
-    }
-    header h1 {
-      color: red;
-      font-size: 3rem;
-      margin: 0;
-    }
-    header p {
-      color: #f44;
-      margin-top: 0.5rem;
-    }
-    .nav-buttons {
-      text-align: center;
-      margin: 1rem 0;
-    }
-    .nav-buttons a {
-      background-color: red;
-      color: white;
-      padding: 0.6rem 1.2rem;
-      margin: 0.5rem;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-      padding: 1rem;
-    }
-    .gallery img {
-      width: 300px;
-      border: 3px solid red;
-      border-radius: 10px;
-    }
-    .form-section {
-      background-color: #1f1f1f;
-      padding: 2rem;
-      margin: 2rem;
-      border-radius: 10px;
-      max-width: 500px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .form-section h2 {
-      color: red;
-      text-align: center;
-    }
-    .form-section input, .form-section select {
-      width: 100%;
-      padding: 0.6rem;
-      margin: 0.5rem 0;
-      border-radius: 5px;
-      border: none;
-    }
-    .form-section button {
-      width: 100%;
-      padding: 0.7rem;
-      background-color: red;
-      border: none;
-      color: white;
-      font-weight: bold;
-      border-radius: 5px;
-    }
-    footer {
-      background-color: #111;
-      color: #ccc;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>7 Brothers AB</h1>
-    <p>Bilservice • Reparationer • Hyrbilar • Försäljning</p>
+    <p class="tagline">Bilservice • Reparationer • Hyrbilar • Försäljning</p>
   </header>
 
-  <div class="nav-buttons">
-    <a href="#service">Boka Service</a>
-    <a href="#minibuss">Boka Minibuss</a>
-    <a href="https://www.blocket.se/butik/7brothers" target="_blank">Till Blocketbutiken</a>
-  </div>
+  <section class="button-container">
+    <button onclick="location.href='#service'">Boka Service</button>
+    <button onclick="location.href='#minibuss'">Boka Minibuss</button>
+    <button onclick="location.href='https://www.blocket.se/butik/7brothersab'">Till Blocketbutiken</button>
+  </section>
 
-  <div class="gallery">
-    <img src="Uppdaterad bild av utsidan på firman.png" alt="Utsidan">
-    <img src="7 Brothers AB's företagsbild.png" alt="Personalen">
-    <img src="7 Brothers AB, Högsta kreditvärdighet.jpeg" alt="Kreditvärdighet">
-    <img src="Alla bilmärken.jpg" alt="Bilmärken">
-    <img src="pussel 7 Brothers AB.png" alt="Pussel">
-    <img src="7BrothersAB.png" alt="Reklamskylt">
-  </div>
-
-  <div id="service" class="form-section">
-    <h2>Boka Service & Reparation</h2>
-    <input type="text" placeholder="Namn" />
-    <input type="email" placeholder="E-post" />
-    <select>
-      <option>Vanlig service</option>
-      <option>Quick Fix (snabb men lite dyrare)</option>
-    </select>
-    <button>Boka nu</button>
-  </div>
-
-  <div id="minibuss" class="form-section">
-    <h2>Boka 9-sitsig Minibuss</h2>
-    <input type="text" placeholder="Namn" />
-    <input type="email" placeholder="E-post" />
-    <input type="date" />
-    <button>Boka minibuss</button>
-  </div>
-
-  <footer>
-    © 2025 7 Brothers AB | All rights reserved
-  </footer>
+  <section class="image-section">
+    <img src="verkstad.jpg" alt="Vår verkstad" />
+    <img src="team.jpg" alt="Vårt team" />
+  </section>
 </body>
 </html>
